@@ -1,0 +1,43 @@
+// Helper function to reverse a string
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+
+// Helper function to check if a string is a palindrome
+function isPalindrome(str) {
+    const reversed = reverseString(str);
+    return str === reversed;
+}
+
+// Helper function to convert a string to title case
+function toTitleCase(str) {
+    return str
+        .toLowerCase()
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+}
+
+// Main function to demonstrate the helper functions
+function main() {
+    const testString = "A man a plan a canal Panama";
+    const nonPalindrome = "Hello World";
+    const titleCaseString = "this is a sample title case string";
+
+    console.log("Original String:", testString);
+
+    const reversed = reverseString(testString);
+    console.log("Reversed String:", reversed);
+
+    const isPalin = isPalindrome(testString.replace(/ /g, '').toLowerCase());
+    console.log("Is Palindrome:", isPalin);
+
+    const isNonPalin = isPalindrome(nonPalindrome.replace(/ /g, '').toLowerCase());
+    console.log("Is Non-Palindrome:", isNonPalin);
+
+    const titleCased = toTitleCase(titleCaseString);
+    console.log("Title Case String:", titleCased);
+}
+
+// Run the main function
+main();
