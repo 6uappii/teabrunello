@@ -10,9 +10,9 @@
     "type": "git",
     "url": "https://github.com/6uappii/teabrunello.git"
   },
-  "dependencies":{
-    "tea-demonstr": "1.0.0"
-    "minti_fulkerson":"0.1.4"
+  "dependencies": {
+    "tea-demonstr": "1.0.0",
+    "minti_fulkerson": "0.1.4"
   },
   "author": "",
   "license": "ISC",
